@@ -1,0 +1,166 @@
+body {
+    background-color: rgb(211, 255, 237);
+    margin: 0px;
+    background-image: url('https://img.freepik.com/vector-premium/patron-perro-costuras-huellas-pata-huesos-corazones-bolas-textura-pie-gato-patron-huella-perro-huesos-textura-perro-ilustracion-vectorial-dibujada-mano-estilo-garabato-sobre-fondo-blanco_192280-1320.jpg');
+    /* background-size: cover; */
+}
+
+.parte {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 95%;
+}
+#parte{    
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-size: 200%;
+}
+
+.todo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    width: 40%;
+    border-radius: 5%;
+    box-shadow: 0px 5px 5px;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+
+.casi-todo {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+}
+
+p {
+    margin: 0% !important;
+}
+
+h1 {
+    margin: 0%;
+    margin-top: 5%;
+}
+
+#btn-cita {
+    margin-bottom: 15%;
+}
+
+tr {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    font-weight: bolder;
+}
+#alerta{
+    position: fixed;
+    left: 35%;
+    top: 40%;
+    width: 30%;
+    justify-content: center;
+    /* padding: 0%; */
+    /* display: inline; */
+    /* transition: 2s; */
+}
+#alerta2{
+    position: fixed;
+    left: 42%;
+    top: 40%;
+    width: 15%;
+    justify-content: center;
+    /* transition: 2s; */
+}
+svg{
+    width: 15%;
+    height: 20px;
+}
+@media screen and (max-width:600px) and (min-width:300px){
+    .todo{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        top: 5%;
+        left: 16.555%;
+        margin-bottom: 10%;
+    }
+    .casi-todo{
+        font-size: 100%;
+    }
+    #parte{
+        font-size: 180%;
+    }
+    tr{
+        justify-content: center;
+        align-items: center;
+    }
+    #alerta{
+        width: 60%;
+        left: 22%;
+    }
+    #alerta2{
+        width: 60%;
+        left: 22%;
+    }
+}
+@media screen and (max-width:1000px) and (min-width:601px){
+    .todo{
+        /* display: flex;
+        flex-direction: column; */
+        width: 80%;
+        top: 5%;
+        left: 12%;
+        margin-bottom: 10%;
+    }
+    img{
+        width: 70%;
+    }
+    .casi-todo{
+        font-size: 100%;
+    }
+    #parte{
+        font-size: 180%;
+    }
+    tr{
+        justify-content: center;
+        align-items: center;
+    }
+    #alerta{
+        width: 60%;
+        left: 22%;
+    }
+    #alerta2{
+        width: 60%;
+        left: 22%;
+    }
+}
+@media screen and (max-width:1330px) and (min-width:1001px){
+    .todo{
+        /* display: flex;
+        flex-direction: column; */
+        width: 50%;
+        top: 5%;
+        left: 27%;
+        margin-bottom: 10%;
+    }
+    .casi-todo{
+        font-size: 100%;
+    }
+    #parte{
+        font-size: 180%;
+    }
+    tr{
+        justify-content: center;
+        align-items: center;
+    }
+    #alerta{
+        width: 30%;
+        left: 36%;
+    }
+    #alerta2{
+        width: 15%;
+        left: 44%;
+    }
+}
